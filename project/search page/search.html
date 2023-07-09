@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: rgba(244, 233, 220, 0.411);
+      }
+    </style>
+    <title>Search</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+      <div class="navbar-header">
+        <a class="navbar-brand mr-5" href="/index.html">BOOKSTORE</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/home page/home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/products page/products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart page/cart.html" class="nav-link">Buy</a>
+        </li>
+        <li class="nav-item active">
+          <a href="/search page/search.html" class="nav-link">Search</a>
+        </li>
+        <li class="nav-item">
+          <a href="/buy page/buy.html" class="nav-link">My cart</a>
+        </li>
+      </ul>
+      <button onclick="logoutHandler()" class="btn btn-light ml-2 text-right">
+        log out
+      </button>
+    </nav>
+    <h1 class="text-center mt-5">Search For Products</h1>
+    <div class="container mt-5">
+      <input
+        id="name"
+        placeholder="enter the book name"
+        type="text"
+        list="books"
+        class="form-control"
+      />
+      <datalist id="books"></datalist>
+      <button onclick="clickHandler()" class="btn btn-success">Search</button>
+    </div>
+    <div class="text-dark text-center" id="search-main"></div>
+  </body>
+  <script src="searchScript.js"></script>
+</html>

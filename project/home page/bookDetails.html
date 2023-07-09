@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bookDetails.css" />
+    <title>Book Details</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+      <div class="navbar-header">
+        <a class="navbar-brand mr-5" href="/index.html">BOOKSTORE</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a href="/home page/home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/products page/products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart page/cart.html" class="nav-link">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a href="/search page/search.html" class="nav-link">Search</a>
+        </li>
+        <li class="nav-item">
+          <a href="/buy page/buy.html" class="nav-link">My cart</a>
+        </li>
+      </ul>
+      <button onclick="logoutHandler()" class="btn btn-light ml-2 text-right">
+        log out
+      </button>
+    </nav>
+    <div class="main-head">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="text-center">
+            <img
+              id="bookImage"
+              class="book_img"
+              src=""
+              alt="book image"
+              width="250px"
+            />
+          </div>
+        </div>
+        <div class="col-md-6 text-center book_info">
+          <div class="text-center text-white">
+            <h2 class="mb-3" id="bookName">unknown</h2>
+            <h5 id="price">unknown</h5>
+            <h5 id="author">unknown</h5>
+            <p id="desc">unknown</p>
+            <a href="/home page/home.html#books" class="btn btn-light">Back</a>
+            <a href="/cart page/cart.html" class="btn btn-dark">Buy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="bookDetails.js"></script>
+</html>

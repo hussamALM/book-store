@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Our Products</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+      <div class="navbar-header">
+        <a class="navbar-brand mr-5" href="/index.html">BOOKSTORE</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/home page/home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a href="/products page/products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart page/cart.html" class="nav-link">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a href="/search page/search.html" class="nav-link">Search</a>
+        </li>
+        <li class="nav-item">
+          <a href="/buy page/buy.html" class="nav-link">My cart</a>
+        </li>
+      </ul>
+      <button onclick="logoutHandler()" class="btn btn-light ml-2 text-right">
+        log out
+      </button>
+    </nav>
+    <h1 class="text-center mt-5 mb-5">Our Products</h1>
+    <div class="bg-light">
+      <table class="table table-striped mt-3 text-center">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th width="70%">Description</th>
+            <th>Image</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="container" >
+        <div style="cursor: pointer; border-radius: 10px;" id="discount" class="p-3 bg-dark text-white text-center">
+          Get Your Discount
+        </div>
+        <div id="discount-card"
+          class="card bg-light text-dark mx-auto design__card"
+          style="width: 200px; height: 100%"
+        >
+          <img src="../imgs/books-imgs/rdpd.jpg" class="card-img-top" />
+          <div class="card-body">
+            <h6 class="card-title">Rich dad Poor dad</h6>
+            <p class="card-description"><aside style="text-decoration: line-through;">65SR</aside></p>
+            <button class="card-description btn btn-success">45SR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="productsScript.js"></script>
+</html>

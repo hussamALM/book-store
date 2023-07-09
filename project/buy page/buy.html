@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="buyStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: rgba(244, 233, 220, 0.411);
+      }
+    </style>
+    <title>buy</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-sm bg-dark">
+      <div class="navbar-header">
+        <a class="navbar-brand mr-5" href="/index.html">BOOKSTORE</a>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="/home page/home.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/products page/products.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="/cart page/cart.html" class="nav-link">Buy</a>
+        </li>
+        <li class="nav-item">
+          <a href="/search page/search.html" class="nav-link">Search</a>
+        </li>
+        <li class="nav-item active">
+          <a href="/buy page/buy.html" class="nav-link">My cart</a>
+        </li>
+      </ul>
+      <button onclick="logoutHandler()" class="btn btn-light ml-2 text-right">
+        log out
+      </button>
+    </nav>
+    <div class="container">
+      <h1 class="text-center mt-5 mb-5">Checkout</h1>
+      <div class="row mx-auto text-center">
+        <div class="col-md-6" style="margin: auto">
+          <div class="bg-light">
+            <table
+              id="danger"
+              class="table table-striped mt-3 text-center"
+            ></table>
+          </div>
+          <form class="mx-auto mt-5">
+            <div class="form-group">
+              <label for="payment"> please select a payment method</label>
+              <br />
+              <input
+                checked
+                class="form-group"
+                type="radio"
+                name="payment"
+                value="visa"
+                id="visa"
+              />
+              VISA
+              <input
+                class="form-group"
+                type="radio"
+                name="payment"
+                value="paypal"
+                id="paypal"
+              />
+              PAYPAL
+              <input
+                class="form-group"
+                type="radio"
+                name="payment"
+                value="mastercard"
+                id="mastercard"
+              />
+              MASTERCARD
+            </div>
+            <br />
+            <textarea placeholder="comment.." cols="65" rows="5"></textarea>
+            <br />
+
+            <button
+              onclick="submitHandler()"
+              class="btn btn-success"
+              type="submit"
+            >
+              checkout
+            </button>
+            <button class="btn btn-danger" onclick="deleteCart()">
+              clear the card
+            </button>
+          </form>
+        </div>
+        <div class="col-md-6" style="margin: auto">
+          <video id="vid" width="450" autoplay>
+            <source src="../vids/paying.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="buyScript.js"></script>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="registrationStyle.css" />
+    <title>registration</title>
+  </head>
+  <body>
+    <div class="x1 text-white">
+      <h1 class="text-center text-dark mb-3">sign up page</h1>
+      <div class="container x2">
+        <form id="form" action="../home page/home.html">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              placeholder="hussam"
+              class="form-control"
+              type="text"
+              maxlength="12"
+              required
+              id="username"
+              name="username"
+            />
+          </div>
+          <div class="form-group">
+            <label id="passwordlabel1" for="password">Password</label>
+            <input
+              id="password1"
+              class="form-control"
+              type="password"
+              maxlength="12"
+              required
+              name="password"
+            />
+          </div>
+          <div class="form-group">
+            <label id="passwordlabel2" for="password2"> Confirm password</label>
+            <input
+              id="password2"
+              class="form-control"
+              type="password"
+              maxlength="12"
+              required
+              name="password2"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              type="email"
+              placeholder="example@gmail.com"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input
+              placeholder="21"
+              class="form-control"
+              type="number"
+              min="10"
+              name="age"
+            />
+          </div>
+          <div class="form-group">
+            <label for="date">Date of birth</label>
+            <input class="form-control" type="date" name="date" />
+          </div>
+          <div class="form-group">
+            <label id="policylabel" for="agree">Accept our policy</label>
+            <input id="policy" type="checkbox" name="agree" />
+          </div>
+          <div class="form-group">
+            <button id="bt" type="submit" class="btn btn-success">
+              Sign up
+            </button>
+            <button type="reset" class="btn btn-danger">Clear</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="registrationScript.js"></script>
+</html>

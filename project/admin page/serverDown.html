@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: antiquewhite;
+      }
+    </style>
+    <title>Admin</title>
+  </head>
+  <body>
+    <h1 class="text-center" style="margin-top: 150px">Shut Down The Server</h1>
+    <div class="container text-center mt-5">
+      <div class="row text-center">
+        <div class="col-md-6 text-right">
+          <button class="btn btn-danger" onclick="turnOff()">Shut Down</button>
+        </div>
+        <div class="col-md-6 text-left">
+          <button class="btn btn-success" onclick="turnOn()">Turn On</button>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+      <a class="btn btn-dark" href="/admin page/admin.html">Back</a>
+    </div>
+  </body>
+  <script>
+    function turnOn() {
+      localStorage.setItem("server", true);
+      alert("the server is one");
+    }
+    function turnOff() {
+      localStorage.setItem("server", false);
+      alert("the server is down");
+    }
+  </script>
+</html>

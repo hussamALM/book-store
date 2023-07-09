@@ -1,0 +1,68 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "name": "Rich Dad Poor Dad",
+      "price": 65,
+      "author": "Robert T Kiyosaki",
+      "img": "rdpd.jpg",
+      "description": "this book about how can you manage your money"
+    },
+    {
+      "id": 2,
+      "name": "How to Speak So People Really Listen",
+      "price": 50,
+      "author": "Paul McGee",
+      "img": "toTalk.jpg",
+      "description": "this book about how you talk in an efficient way so people want to hear you"
+    },
+    {
+      "id": 3,
+      "name": "The Richest Man in Babylon",
+      "price": 80,
+      "author": "GEORGE S. CLASON",
+      "img": "rmb.jpg",
+      "description": "this book about the way that richest man in Babylon lived"
+    },
+    {
+      "id": 4,
+      "name": "The 7 Habits Of Highly Effective People",
+      "price": 70,
+      "author": "Stephen R Covey",
+      "img": "7habits.jpg",
+      "description": "this book about the most common habits that most effictive people"
+    },
+    {
+      "id": 5,
+      "name": "First Things First",
+      "price": 90,
+      "author": "Stephen R. Covey",
+      "img": "ftf.jpg",
+      "description": "this book about how can you manage your most important tasks first"
+    },
+    {
+      "id": 6,
+      "name": "The Power of Your Subconscious Mind",
+      "price": 85,
+      "author": "Joseph Murphy",
+      "img": "powerMind.jpg",
+      "description": "this book teach you about your braint power and how can you control it"
+    },
+    {
+      "id": 7,
+      "name": "Getting Things Done",
+      "price": 45,
+      "author": "David Allen",
+      "img": "gtd.jpg",
+      "description": "this book about you start doing your task and stop postpone them"
+    },
+    {
+      "id": 8,
+      "name": "Atomic Habits",
+      "price": 65,
+      "author": "James Clea",
+      "img": "atomicHabits.jpg",
+      "description": "this book talks about how small habits can change your life and how can you start applying it"
+    }
+  ]
+}

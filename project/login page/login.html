@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="loginStyle.css" />
+    <title>log in</title>
+  </head>
+  <body>
+    <div class="x1 text-white">
+      <div class="container" style="padding-top: 25vh">
+        <h1 class="text-center pb-3">log in page</h1>
+        <form id="form">
+          <div class="form-group">
+            <lebel for="username">Username:</lebel>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              class="form-control"
+              placeholder="username"
+              maxlength="12"
+              required
+            />
+          </div>
+          <div class="form-group pt-3">
+            <lebel for="password">Password:</lebel>
+            <input
+              id="password"
+              class="form-control"
+              name="password"
+              type="password"
+              required
+            />
+          </div>
+          <div class="form-group pt-3">
+            <label for="remember">Remember me?</label>
+            <input type="checkbox" name="rememebr" id="rem" />
+          </div>
+          <div class="form-group">
+            <button onclick="checkData(event)" id="bt" class="btn btn-success">
+              log in
+            </button>
+          </div>
+
+          <div class="form-group pt-5">
+            don't have account ?
+            <a href="../registration page/registration.html">sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="loginScript.js"></script>
+</html>

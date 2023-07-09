@@ -1,0 +1,8 @@
+.btn {
+  transition: all 0.2s;
+  border-radius: 100px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
